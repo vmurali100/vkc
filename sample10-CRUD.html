@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+            <form id="myForm">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <ul id="myFriends">
+
+            </ul>
+
+            <script>
+                var friends = []
+                document.getElementById("myForm").onsubmit = function (event){
+                    event.preventDefault()
+                    var friend= document.getElementById("fname").value;
+                    friends.push(friend)
+                    document.getElementById("fname").value=""
+                    displayArrayValues(friends)
+                }
+
+                function displayArrayValues(friends){
+                    document.getElementById("myFriends").innerHTML=""
+                    for (i=0;i<friends.length;i++){
+                        var myLi=document.createElement("li");
+                        myLi.innerHTML=friends[i]
+                        document.getElementById("myFriends").appendChild(myLi)
+                    }
+                }
+
+                document.getElementById("myFriends").onclick=function (event){
+                    console.log(event.target.innerHTML)
+                    document.getElementById("fname").value=event.target.innerHTML
+                }
+            </script>
+</body>
+</html>

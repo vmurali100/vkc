@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var sample = {
+            firstname : "kiran",
+            lastname : "kumar",
+            age : "21",
+            qualification : "BE",
+            location : "bangalore"
+        }
+        //sample['native'] = "AP";
+        //console.log(sample);
+        //document.write(sample.firstname + " " + sample.lastname)
+        var result ="";
+        for(a in sample){
+            //console.log(sample[a]);
+           result=result+sample[a]+"<br>"
+        }
+        document.getElementById('demo').innerHTML = result;
+        </script>
+    </body>
+</html>

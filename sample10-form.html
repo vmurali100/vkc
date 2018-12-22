@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        document.getElementById("myForm").onsubmit=function (e){
+            e.preventDefault()
+            // document.getElementsByClassName("fname")[0].value="Murali";
+            // document.getElementById("fname").value = "Murali";
+            // document.getElementsByTagName("input")[0].value = "Murali";
+            // document.querySelector("input").value="Murali";
+            document.querySelectorAll("input")[0].value="Murali"
+
+
+            // var fname = document.getElementById("fname").value;
+            // var fname= document.getElementsByClassName("fname")[0].value
+            // // var fname= document.getElementsByTagName("input")[0].value
+
+            // // var fname = document.querySelector("input").value
+
+            // // var fname = document.querySelectorAll("input")[0].value
+            // console.log(fname)
+        }
+    </script>
+</body>
+</html>

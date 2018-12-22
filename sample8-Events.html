@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" 
+    
+    onkeypress="sayHello()"
+    onfocus="handlefoucs()"
+    onblur="handleBlur()"
+    onchange="handleChange()"
+    >
+    <script>
+        function sayHello(){
+            console.log("You Have Presses the Key")
+        }
+
+        function handlefoucs(){
+            console.log("you have just focused")
+        }
+        function handleBlur(){
+            console.log("You have Blurred")
+        }
+        function handleChange(){
+            console.log("you CHANGED")
+        }
+    </script>
+</body>
+</html>

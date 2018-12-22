@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+            ul,div{
+                float:left;
+                }
+           div {
+                width: 200px;
+                height: 200px;
+            }
+            img#myImg {
+                width: 100%;
+                height: 100%;
+            }
+     </style>
+</head>
+<body>
+    <ul>
+        <li onclick="showImage('ap')">Andhra</li>
+        <li onclick="showImage('tn')">Tamil Nadu</li>
+        <li onclick="showImage('ka')">Karnataka</li>
+        <li onclick="showImage('ts')">Telangana</li>
+        <li onclick="showImage('kl')">Kerala</li>
+    </ul>
+    <div>
+        <img src="" alt="" id="myImg">
+    </div>
+    <script>
+    
+    function showImage(state){
+        if(state=='ap'){
+            document.getElementById('myImg').src="http://content.tupaki.com//twdata/2017/1217/news/AP-to-have-28-Districts-by-Sankranthi--1512973297-103.jpg"
+        }else if(state=='ka'){
+            document.getElementById('myImg').src="https://i.pinimg.com/originals/8c/d2/c6/8cd2c6e78218e6bb160f4c7686f84e65.jpg"
+
+        }else if(state=='kl'){
+            document.getElementById('myImg').src="https://www.mapsofindia.com/maps/kerala/kerala-district-map.jpg"
+
+        }else if(state == 'ts'){
+            document.getElementById('myImg').src="https://cdn.telanganatoday.com/wp-content/uploads/2018/05/Telangana-Map-Ne.jpg"
+
+        }else if(state == 'tn'){
+            document.getElementById('myImg').src="https://images.mapsofindia.com/mapinnews/location-map-of-train-derails-near-tamil-nadu-hosur.jpg"
+
+        }
+    }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <button onclick="sayHello()">Static</button>
+    
+    
+    <button class="myBtn">click</button>
+    <button class="myBtn">click</button>
+    <button class="myBtn">click</button>
+    <button class="myBtn">click</button>
+    <button class="myBtn">click</button>
+
+    <script>
+        //DOM Method
+        // document.getElementById("myBtn").onclick=function (){
+        //     alert("Hello World")
+        // }
+
+        //Adding Function As attrubutes
+        function sayHello(){
+            alert("Hello World")
+        }
+
+        // document.getElementById("myBtn").addEventListener('click',function (){
+        //     alert("Alert")
+        // })
+
+        document.querySelector("#myBtn").addEventListener("click",function (){
+            alert("Hello")
+        })
+    </script>
+</body>
+</html>
